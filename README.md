@@ -53,3 +53,35 @@ ns2  IN  A  *your IP address*
 <img src="https://github.com/user-attachments/assets/cce59120-555e-4074-8657-731f1ce3c9d6">
 <img src="https://github.com/user-attachments/assets/34290e2b-2815-49b1-a87f-b7628e964700">
 </p>
+
+You can check your configurations files for any errors made in those. Use a command <br>
+`sudo named-checkconf /etc/bind/named.conf` to check named.conf file and
+`sudo named-checkzone *path to your file*` to check any of your zone file
+If no errors detected there will be no visible result printed or it will simply respond "OK".
+<br>
+
+As you done making your changes in configurations restart bind9 by running `systemctl restart bind9` and check its status with `systemctl status bind9`. 
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/760b5385-d72f-4185-82a6-be001caf1acd">
+</p>
+
+When started you can check its work by sending dns queries handly through CLI using `dig *domain name*` command. 
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/0938f1ca-04a1-4c7b-8576-e6e653a6d3db">
+<img src="https://github.com/user-attachments/assets/86ebfefb-2cbb-4ddc-aa98-4f21a3147607">
+</p>
+
+First time when send DNS query with google.com IP request my PC receives a respond in 1105 ms
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/4b9d9a0c-623b-413e-addd-8b956458389e">
+</p>
+
+Next time this query takes 0 ms to respond as it is saved in bind9 cache. 
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5d9a2665-0e27-4272-befa-3b782e6bf62e">
+</p>
+
