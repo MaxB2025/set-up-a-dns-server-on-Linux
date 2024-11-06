@@ -56,7 +56,7 @@ ns2  IN  A  *your IP address*
 
 You can check your configurations files for any errors made in those. Use a command <br>
 `sudo named-checkconf /etc/bind/named.conf` to check named.conf file and <br>
-`sudo named-checkzone *path to your file*` to check any of your zone file. <br>
+`sudo named-checkzone *path to your file*` to check any of your zone files. <br>
 If no errors detected there will be no visible result printed or it will simply respond "OK".
 <br>
 
