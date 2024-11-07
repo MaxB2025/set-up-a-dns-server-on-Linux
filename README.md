@@ -88,5 +88,5 @@ Next time this query takes 0 ms to respond as it is saved in bind9 cache.
 To make your router use your new DNS resolver, put its IP address into router's DNS server configurations. Any single device could be setted to use your DNS server as well by its settings. You may also try to edit forwarders in named.conf file and test your query latency time. In my case default settings works the fastest so I left it unchanged. 
 
 ## References:
-[build your own DNS server on Linux](https://opensource.com/article/17/4/build-your-own-name-server) <br>
-[bind9 official documentation](https://bind9.readthedocs.io/en/v9.18.31/)
+[Build your own DNS server on Linux](https://opensource.com/article/17/4/build-your-own-name-server) <br>
+[BIND 9 official documentation](https://bind9.readthedocs.io/en/v9.18.31/)
