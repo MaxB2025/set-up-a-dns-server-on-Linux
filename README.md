@@ -85,4 +85,4 @@ Next time this query takes 0 ms to respond as it is saved in bind9 cache.
 <img src="https://github.com/user-attachments/assets/5d9a2665-0e27-4272-befa-3b782e6bf62e">
 </p>
 
-To make your router use your new DNS resolver, put its IP address into router's DNS server configurations. You may also try to edit forwarders in named.conf file and test your query latency time. In my case default settings works the fastest so I left it unchanged. 
+To make your router use your new DNS resolver, put its IP address into router's DNS server configurations. Any device could be setted to use your DNS server as well by its settings. You may also try to edit forwarders in named.conf file and test your query latency time. In my case default settings works the fastest so I left it unchanged. 
